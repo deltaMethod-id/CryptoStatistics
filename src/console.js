@@ -1,4 +1,5 @@
 const console = require("../public/index.html");
+
 function consoles({
   consoleError, 
   consoleLogging, 
@@ -10,3 +11,6 @@ function consoles({
     consoleView: [VIEW]
   }
 }
+// starting
+const runConsole = true;
+console.log(runConsole);
