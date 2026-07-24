@@ -459,6 +459,15 @@
       .search-box { width: 180px; }
     }
   </style>
+  <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/src/service-worker.js")
+      .then(() => console.log("Service Worker actived"))
+      .catch(console.error);
+  });
+}
+</script>
 </head>
 <body>
 
